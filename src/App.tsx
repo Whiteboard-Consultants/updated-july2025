@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import StudyAbroadPage from './pages/StudyAbroadPage';
 import TestPrepPage from './pages/TestPrepPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/study-abroad" element={<StudyAbroadPage />} />
             <Route path="/uow-india-gift-city" element={<UOWIndiaPage />} />
             <Route path="/college-admissions" element={<CollegeAdmissionsPage />} />
             <Route path="/test-prep" element={<TestPrepPage />} />
