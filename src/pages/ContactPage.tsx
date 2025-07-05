@@ -44,13 +44,13 @@ const ContactPage = () => {
     {
       icon: <Mail className="h-6 w-6 text-blue-600" />,
       title: "Email Us",
-      details: "contact@whiteboardconsultant.com",
+      details: "info@whiteboardconsultant.com",
       description: "Send us an email and we'll respond within 24 hours"
     },
     {
       icon: <Phone className="h-6 w-6 text-green-600" />,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "+91 85830 35656",
       description: "Speak directly with our consulting team"
     },
     {
@@ -62,7 +62,7 @@ const ContactPage = () => {
     {
       icon: <Clock className="h-6 w-6 text-purple-600" />,
       title: "Business Hours",
-      details: "Mon - Fri: 9 AM - 6 PM EST",
+      details: "Mon - Sat: 10:00 AM - 6 PM IST",
       description: "Available for emergency consultations 24/7"
     }
   ];
