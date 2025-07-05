@@ -68,13 +68,14 @@ const ContactPage = () => {
   ];
 
   const services = [
-    "Strategic Planning & Consulting",
-    "Team Facilitation & Workshops",
-    "Innovation & Design Thinking",
-    "Business Transformation",
-    "Executive Coaching",
-    "Organizational Development",
-    "Training & Certification",
+    "Study Abroad Consulting",
+    "Domestic College Admissions",
+    "Career Counselling",
+    "Test Preparation",
+    "Public Speaking Mastery",
+    "Spoken English Training",
+    "Employability Training",
+    "Sales Training",
     "Other"
   ];
 
@@ -190,7 +191,7 @@ const ContactPage = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+91 12345 12345"
                       />
                     </div>
                   </div>
