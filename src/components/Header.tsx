@@ -116,13 +116,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-            
-            <Link
-              to="/contact"
-              className="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors duration-200 font-semibold"
-            >
-              Get Started
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -189,14 +182,6 @@ const Header = () => {
                   Register for Courses
                 </Link>
               </div>
-              
-              <Link
-                to="/contact"
-                className="block mx-3 mt-4 bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors duration-200 text-center font-semibold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Get Started
-              </Link>
             </div>
           </div>
         )}
