@@ -322,6 +322,7 @@ const TestPrepPage = () => {
                         course.level === 'Beginner' ? 'bg-green-100 text-green-800' :
                         course.level === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
                         course.level === 'All Levels' ? 'bg-blue-100 text-blue-800' :
+                        course.level === 'Per Module' ? 'bg-purple-100 text-purple-800' :
                         'bg-red-100 text-red-800'
                       }`}>
                         {course.level}
@@ -364,7 +365,7 @@ const TestPrepPage = () => {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-gray-900">{course.price}</span>
+                      <span className="text-lg font-bold text-gray-900">{course.price}</span>
                       <Link
                         to="/student-login"
                         className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center group"
