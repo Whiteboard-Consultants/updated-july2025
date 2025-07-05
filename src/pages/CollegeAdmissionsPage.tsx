@@ -54,30 +54,23 @@ const CollegeAdmissionsPage = () => {
     {
       name: "EIILM University",
       location: "Kolkata, West Bengal",
-      programs: ["BBA", "MBA", "B.Tech", "M.Tech", "BCA", "MCA"],
-      specialties: "Business, Technology, Management",
+      programs: ["BBA", "MBA"],
+      specialties: "Business, Management",
       image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
     },
     {
-      name: "Techno India University",
+      name: "Brainware University",
       location: "Kolkata, West Bengal", 
-      programs: ["B.Tech", "M.Tech", "BCA", "MCA", "MBA"],
+      programs: ["B.Tech", "M.Tech"],
       specialties: "Engineering, Technology, Computer Science",
       image: "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg"
     },
     {
-      name: "Sister Nivedita University",
-      location: "Kolkata, West Bengal",
-      programs: ["B.Tech", "MBA", "BBA", "B.Sc", "M.Sc"],
-      specialties: "Engineering, Management, Sciences",
+      name: "IISM, Mumbai",
+      location: "Mumbai, Maharashtra",
+      programs: ["BSM", "MSM", "BSS", "MSS"],
+      specialties: "Sports Management, Sports Science",
       image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
-    },
-    {
-      name: "Adamas University",
-      location: "Kolkata, West Bengal",
-      programs: ["B.Tech", "MBA", "BBA", "B.Sc", "M.Tech"],
-      specialties: "Engineering, Business, Applied Sciences",
-      image: "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg"
     }
   ];
 
