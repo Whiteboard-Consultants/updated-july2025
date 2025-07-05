@@ -62,7 +62,7 @@ const CollegeAdmissionsPage = () => {
       name: "EIILM University",
       location: "Kolkata, West Bengal",
       programs: ["BBA", "MBA"],
-      specialties: "Business, Management",
+      specialties: "Business, Hotel Management, Finance, Media, Management",
       image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
     },
     {
