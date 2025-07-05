@@ -52,6 +52,13 @@ const CollegeAdmissionsPage = () => {
 
   const colleges = [
     {
+      name: "University of Wollongong",
+      location: "GIFT City, Gujarat",
+      programs: ["Gratuate Certificate in Finance", "Graduate Certificate in Computing", "Masters in Finance (Fintech)", "Masters in Computing(Data Analytics)"],
+      specialties: "Fintech, Data Analytics",
+      image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
+    },
+    {
       name: "EIILM University",
       location: "Kolkata, West Bengal",
       programs: ["BBA", "MBA"],
@@ -70,13 +77,6 @@ const CollegeAdmissionsPage = () => {
       location: "Mumbai, Maharashtra",
       programs: ["BSM", "MSM", "BSS", "MSS"],
       specialties: "Sports Management, Sports Science",
-      image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
-    },
-    {
-      name: "Calcutta Business School",
-      location: "Kolkata, West Bengal",
-      programs: ["MBA"],
-      specialties: "Management",
       image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
     }
   ];
