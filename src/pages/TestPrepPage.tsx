@@ -14,7 +14,7 @@ const TestPrepPage = () => {
       lessons: 32,
       students: 1250,
       rating: 4.9,
-      price: "₹8950 (in Batches), ₹11950 (1-to-1)",
+      price: "₹11950 (1-to-1)",
       level: "All Levels",
       image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
       topics: ["Reading comprehension", "Listening skills", "Speaking practice", "Writing techniques", "Practice tests"]
@@ -27,7 +27,7 @@ const TestPrepPage = () => {
       lessons: 30,
       students: 1450,
       rating: 4.8,
-      price: "₹8950 (in Batches), ₹10950 (1-to-1)",
+      price: "₹10950 (1-to-1)",
       level: "All Levels",
       image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
       topics: ["Academic writing", "Speaking fluency", "Listening comprehension", "Reading strategies", "Band score improvement"]
