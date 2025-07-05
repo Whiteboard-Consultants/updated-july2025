@@ -14,7 +14,7 @@ const TestPrepPage = () => {
       lessons: 32,
       students: 1250,
       rating: 4.9,
-      price: "₹8950 (For Batch), ₹11950 (For Individual)",
+      price: "₹8950 (in Batches), ₹11950 (1-to-1)",
       level: "All Levels",
       image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
       topics: ["Reading comprehension", "Listening skills", "Speaking practice", "Writing techniques", "Practice tests"]
@@ -27,7 +27,7 @@ const TestPrepPage = () => {
       lessons: 30,
       students: 1450,
       rating: 4.8,
-      price: "$299",
+      price: "₹8950 (in Batches), ₹10950 (1-to-1)",
       level: "All Levels",
       image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
       topics: ["Academic writing", "Speaking fluency", "Listening comprehension", "Reading strategies", "Band score improvement"]
@@ -40,7 +40,7 @@ const TestPrepPage = () => {
       lessons: 40,
       students: 890,
       rating: 4.9,
-      price: "$399",
+      price: "₹29950",
       level: "Intermediate",
       image: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
       topics: ["Quantitative reasoning", "Verbal reasoning", "Analytical writing", "Data sufficiency", "Critical reasoning"]
@@ -53,7 +53,7 @@ const TestPrepPage = () => {
       lessons: 38,
       students: 1100,
       rating: 4.8,
-      price: "$399",
+      price: "₹29950",
       level: "Intermediate",
       image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg",
       topics: ["Verbal reasoning", "Quantitative reasoning", "Analytical writing", "Vocabulary building", "Test strategies"]
@@ -66,7 +66,7 @@ const TestPrepPage = () => {
       lessons: 24,
       students: 750,
       rating: 4.7,
-      price: "$249",
+      price: "₹12000",
       level: "Beginner",
       image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
       topics: ["Confidence building", "Speech structure", "Body language", "Audience engagement", "Presentation skills"]
@@ -79,8 +79,8 @@ const TestPrepPage = () => {
       lessons: 32,
       students: 1650,
       rating: 4.8,
-      price: "$199",
-      level: "All Levels",
+      price: "₹2599",
+      level: "Beginner",
       image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
       topics: ["Pronunciation improvement", "Grammar in conversation", "Vocabulary expansion", "Fluency development", "Accent training"]
     },
@@ -92,8 +92,8 @@ const TestPrepPage = () => {
       lessons: 24,
       students: 980,
       rating: 4.9,
-      price: "$199",
-      level: "All Levels",
+      price: "₹499",
+      level: "Per Module",
       image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg",
       topics: ["Resume writing", "Interview skills", "Professional communication", "Networking", "Career planning"]
     }
