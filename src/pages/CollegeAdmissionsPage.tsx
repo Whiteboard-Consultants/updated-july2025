@@ -54,7 +54,7 @@ const CollegeAdmissionsPage = () => {
     {
       name: "University of Wollongong",
       location: "GIFT City, Gujarat",
-      programs: ["Gratuate Certificate in Finance", "Graduate Certificate in Computing", "Masters in Finance (Fintech)", "Masters in Computing(Data Analytics)"],
+      programs: ["Gratuate Certificate", "Masters in Finance (Fintech)", "Masters in Computing(Data Analytics)"],
       specialties: "Fintech, Data Analytics",
       image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg"
     },
