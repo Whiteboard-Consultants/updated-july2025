@@ -128,11 +128,19 @@ const StudyAbroadPage = () => {
       highlights: ["English-speaking country", "EU membership benefits", "Tech industry hub", "Friendly culture"]
     },
     {
+      country: "Dubai, UAE",
+      universities: "50+",
+      programs: "Business, Finance, Hospitality, Engineering",
+      avgCost: "$15,000 - $35,000/year",
+      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+      highlights: ["Tax-free income", "Global business hub", "Multicultural environment", "Strategic location"]
+    },
+    {
       country: "New Zealand",
       universities: "8+",
       programs: "Agriculture, Environmental Science, Adventure Tourism",
       avgCost: "$22,000 - $35,000/year",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+      image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg",
       highlights: ["Stunning natural beauty", "Quality education", "Safe country", "Adventure opportunities"]
     }
   ];
@@ -304,7 +312,7 @@ const StudyAbroadPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {destinations.map((destination, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
@@ -313,26 +321,26 @@ const StudyAbroadPage = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{destination.country}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{destination.country}</h3>
                   
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Universities:</span>
-                      <span className="font-semibold">{destination.universities}</span>
+                      <span className="text-gray-600 text-sm">Universities:</span>
+                      <span className="font-semibold text-sm">{destination.universities}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Average Cost:</span>
-                      <span className="font-semibold">{destination.avgCost}</span>
+                      <span className="text-gray-600 text-sm">Average Cost:</span>
+                      <span className="font-semibold text-sm">{destination.avgCost}</span>
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 mb-4">{destination.programs}</p>
+                  <p className="text-gray-600 mb-4 text-sm">{destination.programs}</p>
                   
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">Key Highlights:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">Key Highlights:</h4>
                     <ul className="space-y-1">
                       {destination.highlights.map((highlight, idx) => (
-                        <li key={idx} className="flex items-center text-sm text-gray-700">
+                        <li key={idx} className="flex items-center text-xs text-gray-700">
                           <CheckCircle className="h-3 w-3 text-green-600 mr-2 flex-shrink-0" />
                           {highlight}
                         </li>
@@ -342,7 +350,7 @@ const StudyAbroadPage = () => {
                   
                   <Link
                     to="/contact"
-                    className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-center block"
+                    className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-center block text-sm"
                   >
                     Learn More
                   </Link>
