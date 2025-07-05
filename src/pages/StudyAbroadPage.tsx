@@ -120,11 +120,19 @@ const StudyAbroadPage = () => {
       highlights: ["Low tuition fees", "Strong economy", "Innovation hub", "Central European location"]
     },
     {
+      country: "Ireland",
+      universities: "35+",
+      programs: "Technology, Pharmaceuticals, Finance, Agriculture",
+      avgCost: "$12,000 - $25,000/year",
+      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      highlights: ["English-speaking country", "EU membership benefits", "Tech industry hub", "Friendly culture"]
+    },
+    {
       country: "New Zealand",
       universities: "8+",
       programs: "Agriculture, Environmental Science, Adventure Tourism",
       avgCost: "$22,000 - $35,000/year",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
       highlights: ["Stunning natural beauty", "Quality education", "Safe country", "Adventure opportunities"]
     }
   ];
