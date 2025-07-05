@@ -58,9 +58,9 @@ const StudentRegisterPage = () => {
             <div className="p-8 lg:p-12">
               <div className="text-center mb-8">
                 <img
-                  src="/Version 4 Rectangle white.webp"
-                  alt="Whiteboard Consultant Logo"
-                  className="mx-auto h-12 w-auto mb-4"
+                  src="/Whitedge App Logo.png"
+                  alt="Whitedge App Logo"
+                  className="mx-auto h-16 w-auto mb-4"
                 />
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">
                   Create Student Account

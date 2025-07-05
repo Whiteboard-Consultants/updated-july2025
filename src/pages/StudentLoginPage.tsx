@@ -42,9 +42,9 @@ const StudentLoginPage = () => {
           <div className="max-w-md w-full space-y-8">
             <div className="text-center">
               <img
-                src="/Version 4 Rectangle white.webp"
-                alt="Whiteboard Consultant Logo"
-                className="mx-auto h-16 w-auto mb-6"
+                src="/Whitedge App Logo.png"
+                alt="Whitedge App Logo"
+                className="mx-auto h-20 w-auto mb-6"
               />
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
                 Student Portal Login
