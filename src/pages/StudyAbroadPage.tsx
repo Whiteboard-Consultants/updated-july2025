@@ -190,24 +190,24 @@ const StudyAbroadPage = () => {
 
   const testimonials = [
     {
-      name: "Ananya Sharma",
+      name: "Priya Sharma",
       university: "University of Toronto, Canada",
       program: "Master's in Computer Science",
       content: "Whiteboard Consultants made my dream of studying in Canada a reality. Their guidance throughout the entire process was exceptional.",
       rating: 5
     },
     {
-      name: "Rahul Patel",
-      university: "Stanford University, USA",
-      program: "MBA",
-      content: "From test preparation to visa guidance, they supported me at every step. I couldn't have achieved this without their expertise.",
+      name: "Aditya Chamaria",
+      university: "University of Glasglow, UK",
+      program: "MSc Data Science",
+      content: "With my CGPA of 7.8, Whiteboard Consultants not only helped in getting my offer letter, they also helped me with my TOEFL test preparation to visa guidance, they supported me at every step. I couldn't have achieved this without their expertise.",
       rating: 5
     },
     {
-      name: "Priya Nair",
-      university: "University of Melbourne, Australia",
-      program: "Master's in Data Science",
-      content: "The team's knowledge of international education systems is impressive. They helped me secure admission with a scholarship.",
+      name: "Arijit Deb",
+      university: "National College of Ireland",
+      program: "Masters in Cloud Computing Aspirant",
+      content: "The TOEFL preparation and application guidance were outstanding. I received my offer letter withing a week of my application. I couldn't have achieved my goals without their support.",
       rating: 5
     }
   ];
