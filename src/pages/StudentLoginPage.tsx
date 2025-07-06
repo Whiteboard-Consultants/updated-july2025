@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { User, Lock, Eye, EyeOff, BookOpen, ArrowRight } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { User, Lock, Eye, EyeOff, BookOpen, ArrowRight, AlertCircle } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
 
 const StudentLoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -9,11 +10,29 @@ const StudentLoginPage = () => {
     password: '',
     rememberMe: false
   });
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log('Login attempt:', formData);
+    setError('');
+    setIsLoading(true);
+
+    try {
+      const success = await login(formData.email, formData.password);
+      if (success) {
+        navigate('/lms/dashboard');
+      } else {
+        setError('Invalid email or password. Please try again.');
+      }
+    } catch (err) {
+      setError('An error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,6 +43,27 @@ const StudentLoginPage = () => {
     }));
   };
 
+  const demoAccounts = [
+    {
+      role: 'Admin',
+      email: 'admin@whiteboardconsultant.com',
+      password: 'demo123',
+      description: 'Full system access, user management, analytics'
+    },
+    {
+      role: 'Instructor',
+      email: 'instructor@whiteboardconsultant.com',
+      password: 'demo123',
+      description: 'Course management, student tracking, grading'
+    },
+    {
+      role: 'Student',
+      email: 'student@whiteboardconsultant.com',
+      password: 'demo123',
+      description: 'Course access, progress tracking, assignments'
+    }
+  ];
+
   const modules = [
     "TOEFL Preparation",
     "IELTS Preparation", 
@@ -33,6 +73,15 @@ const StudentLoginPage = () => {
     "Spoken English",
     "Employability Skills"
   ];
+
+  const fillDemoCredentials = (email: string, password: string) => {
+    setFormData(prev => ({
+      ...prev,
+      email,
+      password
+    }));
+    setError('');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -53,6 +102,33 @@ const StudentLoginPage = () => {
                 Access your courses and track your progress
               </p>
             </div>
+
+            {/* Demo Accounts */}
+            <div className="bg-white rounded-lg p-4 border border-blue-200">
+              <h3 className="text-sm font-semibold text-gray-900 mb-3">Demo Accounts</h3>
+              <div className="space-y-2">
+                {demoAccounts.map((account, index) => (
+                  <button
+                    key={index}
+                    onClick={() => fillDemoCredentials(account.email, account.password)}
+                    className="w-full text-left p-2 rounded border border-gray-200 hover:bg-blue-50 transition-colors duration-200"
+                  >
+                    <div className="flex justify-between items-center">
+                      <span className="font-medium text-sm text-gray-900">{account.role}</span>
+                      <span className="text-xs text-blue-600">Click to fill</span>
+                    </div>
+                    <p className="text-xs text-gray-500 mt-1">{account.description}</p>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {error && (
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center">
+                <AlertCircle className="h-5 w-5 text-red-600 mr-3" />
+                <span className="text-red-700 text-sm">{error}</span>
+              </div>
+            )}
 
             <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
               <div className="space-y-4">
@@ -135,10 +211,11 @@ const StudentLoginPage = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center group font-semibold"
+                disabled={isLoading}
+                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center group font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Sign In to LMS
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                {isLoading ? 'Signing In...' : 'Sign In to LMS'}
+                {!isLoading && <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />}
               </button>
 
               <div className="text-center">
