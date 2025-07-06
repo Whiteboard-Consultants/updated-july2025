@@ -88,6 +88,7 @@ const LMSLayout: React.FC<LMSLayoutProps> = ({ children }) => {
       <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 ${
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       }`}>
+        {/* Sidebar Header */}
         <div className="flex items-center justify-between h-16 px-6 border-b border-gray-200">
           <div className="flex items-center space-x-3">
             <img
@@ -105,50 +106,54 @@ const LMSLayout: React.FC<LMSLayoutProps> = ({ children }) => {
           </button>
         </div>
 
-        <nav className="mt-6 px-3">
-          <ul className="space-y-1">
-            {navigationItems.map((item) => {
-              const Icon = item.icon;
-              return (
-                <li key={item.name}>
-                  <Link
-                    to={item.href}
-                    className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
-                      isActive(item.href)
-                        ? 'bg-blue-100 text-blue-700'
-                        : 'text-gray-700 hover:bg-gray-100'
-                    }`}
-                    onClick={() => setSidebarOpen(false)}
-                  >
-                    <Icon className="h-5 w-5 mr-3" />
-                    {item.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+        {/* Sidebar Content Container */}
+        <div className="flex flex-col h-full">
+          {/* Navigation Menu */}
+          <nav className="flex-1 px-3 py-6 overflow-y-auto">
+            <ul className="space-y-2">
+              {navigationItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <li key={item.name}>
+                    <Link
+                      to={item.href}
+                      className={`flex items-center px-3 py-3 text-sm font-medium rounded-lg transition-colors duration-200 ${
+                        isActive(item.href)
+                          ? 'bg-blue-100 text-blue-700'
+                          : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      <Icon className="h-5 w-5 mr-3 flex-shrink-0" />
+                      <span className="truncate">{item.name}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
 
-        {/* User profile section */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200">
-          <div className="flex items-center space-x-3 mb-3">
-            <img
-              src={user?.avatar || 'https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg'}
-              alt={user?.name}
-              className="h-10 w-10 rounded-full object-cover"
-            />
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium text-gray-900 truncate">{user?.name}</p>
-              <p className="text-xs text-gray-500 capitalize">{user?.role}</p>
+          {/* User Profile Section - Fixed at Bottom */}
+          <div className="flex-shrink-0 p-4 border-t border-gray-200 bg-white">
+            <div className="flex items-center space-x-3 mb-4">
+              <img
+                src={user?.avatar || 'https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg'}
+                alt={user?.name}
+                className="h-10 w-10 rounded-full object-cover flex-shrink-0"
+              />
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-gray-900 truncate">{user?.name}</p>
+                <p className="text-xs text-gray-500 capitalize">{user?.role}</p>
+              </div>
             </div>
+            <button
+              onClick={handleLogout}
+              className="flex items-center w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+            >
+              <LogOut className="h-4 w-4 mr-3 flex-shrink-0" />
+              <span>Sign Out</span>
+            </button>
           </div>
-          <button
-            onClick={handleLogout}
-            className="flex items-center w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-200"
-          >
-            <LogOut className="h-4 w-4 mr-3" />
-            Sign Out
-          </button>
         </div>
       </div>
 
