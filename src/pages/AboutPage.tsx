@@ -38,7 +38,7 @@ const AboutPage = () => {
               About Whiteboard Consultant
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We are strategic facilitators, business consultants, and collaborative problem-solvers dedicated to transforming organizations through innovative methodologies and expert guidance.
+              At Whiteboard Consultants – The Top Education Consultants, we’re passionate about empowering students to reach their full potential. Our dedicated team of education experts provides comprehensive guidance, from application assistance to visa processing, from program selection to test preparation and from helping with public speaking to spoken english.
             </p>
           </div>
         </div>
