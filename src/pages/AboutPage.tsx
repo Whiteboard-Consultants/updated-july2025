@@ -53,13 +53,16 @@ const AboutPage = () => {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded with the vision of unlocking organizational potential through collaborative methodologies, Whiteboard Consultant has grown from a single facilitator's passion into a comprehensive consulting practice serving organizations worldwide.
+                With over 2+ decades of experience in education and edtech, we have played diverse roles in guiding students towards their career goals. We immersed ourselves in understanding the industry’s requirements, operations, and support mechanisms.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our approach combines traditional strategic consulting with innovative facilitation techniques, creating environments where teams can think creatively, solve complex problems, and align around shared objectives.
+                Expanding our network, we aimed to offer and receive assistance effectively. Leveraging our experience, we have honed the student journey, highlighting pitfalls to avoid and showcasing the benefits of understanding chosen career paths for success.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                What started as whiteboard sessions in conference rooms has evolved into a sophisticated practice that helps organizations navigate change, drive innovation, and achieve sustainable growth.
+                We empathetically stepped into the shoes of students and career seekers, navigating the journey to understand and overcome obstacles in pursuing higher education.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                This journey led us to establish Whiteboard Consultants, a top education consultant in Kolkata, where you can seek guidance and meticulously plan your career or higher education path with a fresh perspective.
               </p>
             </div>
             <div className="relative">
